@@ -84,3 +84,23 @@ Team learning: The importance of dialogue and group discussion. For a team to le
 - Operability Reviews
 - Blameless Post Mortems
 
+---
+
+# failure and success come from the same source
+
+^ they come from the same source,  ordinary work, only difference in failure
+things have come together in unexpected way
+
+---
+
+# context
+
+^ some alignment of random variables in the system causes context to change
+
+---
+
+# can study the system at any time
+
+^ if field experts study the system, you can find the same things you would in a postmortem
+
+---
