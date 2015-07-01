@@ -93,6 +93,8 @@ things have come together in unexpected way
 
 ---
 
+![](images/faces.jpg)
+
 # context
 
 ^ some alignment of random variables in the system causes context to change
@@ -102,5 +104,23 @@ things have come together in unexpected way
 # can study the system at any time
 
 ^ if field experts study the system, you can find the same things you would in a postmortem
+
+---
+
+# early feedback and discussion
+
+- architecture reviews
+
+---
+
+# before launch
+
+- operability reviews
+
+---
+
+# after failure
+
+- blameless post mortem
 
 ---
