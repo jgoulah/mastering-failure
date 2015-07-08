@@ -26,9 +26,10 @@ build-lists: true
 
 # Infrastructure
 
-- 3XXX MySQL databases (find this0)
-- someting about gearman workers
-- something about statsd metrics
+- over 5500 MySQL databases
+- 750K graphite metrics/min
+- 35K nagios service checks
+- 1.3GB logs written/min
 - 30-50 deploys / day
 
 ---
