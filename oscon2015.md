@@ -8,6 +8,10 @@ build-lists: true
 
 ![](images/etsy_logo_lg_rgb.png)
 
+^ A marketplace for people around the world to connect, buy, and sell unique goods 
+
+^ Etsy is the marketplace that we all make together, and our mission is to re-imagine commerce in ways that build a more fulfilling and lasting world
+
 ---
 
 # Marketplace
@@ -40,9 +44,13 @@ build-lists: true
 
 # Values
 
+^ we are a values driven company
+
 ---
 
 ![fit](images/mission-values-culture.jpg)
+
+^ values are our path towards the mission, and everything is surrounded by the culture
 
 <!---
 
@@ -155,31 +163,16 @@ things have come together in unexpected way
 
 ^ if field experts study the system, you can find the same things you would in a postmortem
 
-
-
 ---
 
 # three inflection points
 
-^ in the product lifecycle
-
----
-
-# Architecture Reviews
-
-early feedback and discussion
-
----
-
-# Operability Reviews
-
-before launch
-
----
-
-# Blameless Post Mortem
-
-after failure
+- architecture reviews
+    - early feedback and discussion
+- operability reviews
+    - hold before launching
+- blameless post mortems
+    - hold after a failure
 
 ---
 
@@ -199,17 +192,23 @@ understand the costs and benefits of a proposed solution, and discuss alternativ
 - all technology decisions come with trade offs. With new technology, many of those trade offs are unknown.
 - we’re growing. things change.
 
+^ have to show our tech axioms to get understanding of why we examine new methods and departures 
+
 ---
 
 # [fit] with new technology
 
 # [fit] many of those tradeoffs are unknown
 
+^ we want to examine these tradeoffs
+
 ---
 
 # Departures
 
 a departure is when new technologies or patterns are introduced that deviate from the current known methods of operating the system and maintaining the software
+
+^ we call these new technologies departures
 
 ^ this includes new languages, new database systems, or a new templating pattern
 
@@ -219,6 +218,8 @@ a departure is when new technologies or patterns are introduced that deviate fro
 
 when there is a perceived departure from current technology choices or patterns
 
+^ in other words some new tech we don't have experience with
+
 ---
 
 # How early do you hold them?
@@ -227,20 +228,79 @@ early enough to be able to bail out or make major course corrections
 
 ---
 
-# Some Questions
+# Who should come?
+
+- the people presenting the change
+- key stakeholders (sr. engineers, or arch review working group)
+- everyone else that wants to learn about the proposed changes to the system
+
+---
+
+# [fit] Meeting Format
+
+^ now lets talk about the format and expectations
+
+
+---
+
+# Preparation
+
+- a proposal is written in a shared document and circulated
+- comments are added, discussed, and potentially resolved in advance
+- initial questions for the meeting are collected in a tool such as google moderator
+
+^ some work done to avoid the longest meeting ever...
+
+^ proposal should cover goals, mapping design onto goals, departures from existing tech, alternatives and why they weren't used, costs and pain points
+
+---
+
+# Some General Questions
 
 - Do we understand the costs of this departure?  
 - Have we asked hard questions about trade-offs?
 - What will this prohibit us from doing in the future?
+
+---
+
+# Some Questions (cont)
+
 - Are we impacting visibility, measurability, debuggability and other operability concerns?
 - Are we impacting testability, security, translatability, performance and other product quality concerns?
 - Does it makes sense?
 
 ---
 
+# The Arch Review
+
+- proposal is presented to the group
+- discuss questions and concerns
+- decide if we are moving forward or need further discussion
+
+---
+
+# [fit] Wait!
+
+# You're saying my project might not move forward?
+
+---
+
+#### (maybe)
+
+---
+
+# Why might this end a project?
+
+- we learned through this discussion that an alternative is better
+- we find goals overlap with other projects that are in progress
+- we discover that it isn't worth the costs now that we have a better idea what they are
+
+---
+
 # At the end we should have
 
 - detailed notes from the conversation 
+- agreement on tricky components and document 
 - a compilation of learnings and questions
 - a decision of whether to keep going with the project, stop and rethink, or gather more information
 
