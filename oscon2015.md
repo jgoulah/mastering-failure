@@ -28,8 +28,8 @@ build-lists: true
 
 - over 5500 MySQL databases
 - 750K graphite metrics/min
-- 35K nagios service checks
 - 1.3GB logs written/min
+- 50M - 75M gearman jobs / day
 - 30-50 deploys / day
 
 ---
@@ -51,7 +51,7 @@ build-lists: true
 
 ![fit](images/mission-values-culture.jpg)
 
-^ values are our path towards the mission, and everything is surrounded by the culture
+^ values are the guardrails in our path towards the mission, and everything is surrounded by the culture
 
 <!---
 
@@ -72,17 +72,19 @@ build-lists: true
 
 a company that facilitates the learning of its members and continuously transforms itself
 
-^ concept was coined through the work and research of Peter Senge and his colleagues ; encourages more interconnected way of thinking
+^ Peter Senge is a systems scientist who is a sr lecturer at MIT and founder of the Society for Organizational Learning
+
+^ this concept was coined through the work and research of Senge and his colleagues ; it encourages more interconnected way of thinking
+
 
 ---
 
 # Five Disciplines
 
-^ Senge is a systems scientist who is a sr lecturer at MIT and founder of the Society for Organizational Learning
 
-^ Author of book The Fifth Discipline: The Art and Practice of the Learning Organization.
+^ Senge is the author of book The Fifth Discipline: The Art and Practice of the Learning Organization.
 
-^ Senge popularized the concept of the learning organization through his book The Fifth Discipline. In the book, he proposed the following five disciplines
+^ He popularized the concept of the learning organization through his book The Fifth Discipline. In the book, he proposed the following five disciplines
 
 ---
 
@@ -162,7 +164,7 @@ things have come together in unexpected way
 
 # can study the system at any time
 
-^ if field experts study the system, you can find the same things you would in a postmortem
+^ if field experts study the system, you can find the same things you would in a postmortem, presumably before they even happen
 
 ---
 
@@ -174,6 +176,8 @@ things have come together in unexpected way
     - hold before launching
 - blameless post mortems
     - hold after a failure
+
+^ inflection points in the product lifecycle 
 
 ---
 
@@ -264,7 +268,7 @@ early enough to be able to bail out or make major course corrections
 
 ---
 
-# Some Questions (cont)
+# Some General Questions (cont)
 
 - Are we impacting visibility, measurability, debuggability and other operability concerns?
 - Are we impacting testability, security, translatability, performance and other product quality concerns?
@@ -325,9 +329,113 @@ Understand how could the system break, how will we know, and how will we react?
 
 ---
 
+# Who comes to the Operability Review?
+
+representatives from:
+
+- Product
+- Development
+- Operations
+- Community/Support
+- QA
+
+---
+
+# Some Questions
+
+- Has the feature been tested enough to deploy to production?
+- Does everyone know when it will go live, and who will push the feature?
+- Is there communication about the feature ready to go out with the feature?
+- Is it possible to turn up this feature on a percentage basis or dark launch?
+
+^ percentage may be to staff first
+^ communication - community/blog post/forums/etc
+
+---
+
+# Some Questions (cont)
+
+- Does the launch involves any new production infrastructure? 
+    - If so, are those pieces in monitoring or metrics collection?
+    - If so, is there a deployment pipeline in place?
+    - If so, is there a development environment set up to make it work in dev?
+    - If so, are there tests that can be and are run on CI?
+
+^ none of these can be "no"
+
+---
+
+# Contingency Checklist
+
+a list of things that could possibly go "wrong" with a new feature, what we could do about it
+
+---
+
+# Issue
+
+What could possibly go wrong with the feature launched in production?
+
+^ This is intentionally vague, because of course there's a multitude of things that can go wrong at any time. This is meant to assume that the site is stable before launch, and anything that could 'go wrong' is a result of introducing the change which is this new feature.
+
+---
+
+# Likelihood
+
+What is the likelihood of each item going wrong?
+
+^ this is a gut check based on things like: capacity of the various backend services touched by the feature
+
+---
+
+# Comments
+
+Any comments about the item?
+
+^ further description of issue and how it may be mitigated if it does happen (short/long term)
+
+---
+
+# Impact
+
+This is just a measure of how impactful this will be if it *does* actually turn out to be a concern.
+
+^ Example: "High"
+
+---
+
+# Engineering
+
+What do we do to mitigate the issue with the item (i.e. can we gracefully degrade?)
+
+^ This is where we indicate what the wire on/off flag is to turn off this part of the feature that is introducing issues.
+
+^ Example: Set disable_coffee_favorites_page = 1
+
+---
+
+# Onsite Messaging
+
+What is the messaging to the user in the forums/blog/etc. if this needs graceful degradation?
+
+^ This is where we have some basic information to tell the user, in the various places on the site.
+
+---
+
+# PR
+
+Is PR needed for the contingency (i.e. larger scale failure, etc.)
+
+^ This is the real worst-case communication, if needed.
+
+---
+
 # Summary of Arch vs. Op
 
 ![inline](images/kellan-tweet.png)
+
+---
+
+# Post Mortems
 
 ---
 
