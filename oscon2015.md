@@ -439,5 +439,79 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ---
 
+# What is a post mortem?
+
+a postmortem is a facilitated meeting during which people involved/interested/close to an accident or incident debriefs together on how we think the event came about
+
+---
+
+# What does it cover?
+
+- going through a timeline of events
+- learning how things are expected to work ‘normally’, adding the context of everyone’s perspective
+- exploring what we might do to improve thing for the future
+
+---
+
+# local rationality
+
+we want to know how it made sense for someone to do what they did at the time
+
+---
+
+# searching for second stories instead of human error
+
+- asking **why** is leading to *who* is responsible
+- asking **how** leads to *what*
+
+---
+
+# Human Error
+
+**Human error** points to individuals in a complex system. In complex systems, system behaviour is driven fundamentally by the goals of the system and the system structure. People provide the flexibility to make it work.
+
+<!--http://humanisticsystems.com/2013/09/21/human-error-the-handicap-of-human-factors-safety-and-justice-->
 
 
+---
+
+# staying away from human error
+
+- recognize other words for it: slip, lapse, distraction, mistake, deviation, carelessness, malpractice, recklessness, violation, misjudgement, etc
+- don’t point to individuals when you really want to understand system itself and the work
+- how do you feel when something goes wrong - is it to find who did it / who screwed up,  or to find how it happened
+
+---
+
+# Human error (cont)
+
+implies deviation from “normal” or ideal, but in complex situations and tasks there is often no normal ideal that can be precisely and exactly described, many variable interconnected touchpoints influence decisions that are made
+
+---
+
+# no such thing as root cause
+
+- it leads to a simplistic and linear explanation of how events transpired
+- linear mental models of causality don’t capture what is needed to improve the safety of a system
+- ignores the complexity of an event, which is what should be explored if we are going to learn
+- leads directly to blaming things on human error
+
+---
+
+# avoid hindsight bias
+
+inclination, after an event has occurred, to see the event as having been predictable, despite there having been little or no objective basis for predicting it
+
+^ given what people knew at the time, and given the choices they made based on that, it wasn't possible to avoid
+
+---
+
+# avoid counterfactuals
+
+the human tendency to create possible alternatives to life events that have already occurred; something that is contrary to what actually happened
+
+^ Counterfactual thinking is exactly as it states: "counter to the facts."
+
+^ could have, should have, would have
+
+---
