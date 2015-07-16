@@ -489,24 +489,34 @@ implies deviation from “normal” or ideal, but in complex situations and task
 
 ---
 
-# no such thing as root cause
+![](images/bull.jpg)
+
+# Other things to avoid
+
+<!-- https://www.flickr.com/photos/40326422@N00/4679317079 -->
+
+---
+
+# Root Cause
 
 - it leads to a simplistic and linear explanation of how events transpired
 - linear mental models of causality don’t capture what is needed to improve the safety of a system
 - ignores the complexity of an event, which is what should be explored if we are going to learn
 - leads directly to blaming things on human error
 
+^ there is no such thing as root cause
+
 ---
 
-# avoid hindsight bias
+# Hindsight Bias
 
 inclination, after an event has occurred, to see the event as having been predictable, despite there having been little or no objective basis for predicting it
 
-^ given what people knew at the time, and given the choices they made based on that, it wasn't possible to avoid
+^ given what people knew at the time, and given the choices they made based on that, it wasn't possible for the people involved to avoid it
 
 ---
 
-# avoid counterfactuals
+# Counterfactuals
 
 the human tendency to create possible alternatives to life events that have already occurred; something that is contrary to what actually happened
 
@@ -515,3 +525,60 @@ the human tendency to create possible alternatives to life events that have alre
 ^ could have, should have, would have
 
 ---
+
+# [fit] Meeting Format
+
+---
+
+# Meeting Format
+
+- Timeline
+- Discussion
+- Remediation Items
+
+---
+
+# Timeline
+
+- a rough timeline scaffolding is required (usually starting with IRC logs)
+- talk about facts that were known at the time, even if hindsight reveals misunderstandings in what we knew
+- look out for knowledge that some people were aware of, that others were not, dig into that
+- no judgement about actions or knowledge (counterfactuals)
+- tell people to hold that thought if they jump to remedation items at this point
+
+---
+
+# Timeline (cont)
+
+- continually ask "What are we missing?" until those involved feel its complete
+- continually ask "Does everyone agree this is the order in which events took place?"
+- make sure to include important times for events that happened (alerts, discoveries, etc)
+- reach a consensus on the timeline and move on to the discussion
+
+---
+
+# Discussion
+
+- When an action or decision was taken in the timeline, ask the person: "Think back to what you knew **at the time**, why did that action make sense to you at the time?"
+- Did we clean up anything after we were stable, how long did it take?
+- Was there any troubleshooting fatigue?
+
+---
+
+# Discussion (cont)
+
+- Did we do a good job with communication (site status, support, forums, etc)?
+- Were all tools on hand and working, ready to use when we needed them during the issue? Where there tools we would have liked to have?
+- Did we have enough metrics visibility to diagnose the issue?
+- Was there collaborative and thoughtful communication during the issue?
+
+---
+
+# Remediation
+
+- Remediation items should have tickets associated with them to follow up on
+- There can be further post meeting discussion on these but tasks should not linger
+- What things could we do to prevent this exact thing from happening in the future?
+- What things could we do to make troubleshooting similar incidents in the future easier?
+
+^ question wrt tools, alerts, metrics, procedures, etc.
