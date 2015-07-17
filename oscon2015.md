@@ -1,8 +1,9 @@
 build-lists: true
 # Building A Successful Organization By Mastering Failure
 
-### John Goulah
-### Etsy
+### John Goulah (@johngoulah)
+
+#### Etsy
 
 ---
 
@@ -429,12 +430,6 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ---
 
-# Summary of Arch vs. Op
-
-![inline](images/kellan-tweet.png)
-
----
-
 # Post Mortems
 
 ---
@@ -582,3 +577,31 @@ the human tendency to create possible alternatives to life events that have alre
 - What things could we do to make troubleshooting similar incidents in the future easier?
 
 ^ question wrt tools, alerts, metrics, procedures, etc.
+
+---
+
+# In Summary
+
+---
+
+# Summary of Arch vs. Op
+
+![inline](images/kellan-tweet.png)
+
+---
+
+# Postmortems are done soon after a failure
+
+^ can be any severity level, doesn't have to be technical
+
+^ have done them for performance reasons
+
+---
+
+# Questions?
+
+#### John Goulah (@johngoulah)
+
+#### Etsy
+
+---
