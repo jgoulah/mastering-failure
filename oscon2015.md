@@ -11,7 +11,7 @@ build-lists: true
 
 ^ A marketplace for people around the world to connect, buy, and sell unique goods 
 
-^ Etsy is the marketplace that we all make together, and our mission is to re-imagine commerce in ways that build a more fulfilling and lasting world
+^ Our mission is to re-imagine commerce in ways that build a more fulfilling and lasting world
 
 ---
 
@@ -23,6 +23,8 @@ build-lists: true
 - 30% international GMS
 - 57%+ mobile visits
 
+^ a little about the marketplace
+
 ---
 
 # Infrastructure
@@ -32,6 +34,8 @@ build-lists: true
 - 1.3GB logs written/min
 - 50M - 75M gearman jobs / day
 - 30-50 deploys / day
+
+^ some interesting facts about the scale of our infrastructure
 
 ---
 
@@ -144,6 +148,10 @@ the problem solving capacity of the organization is improved through better acce
 - operability reviews
 - blameless post mortems
 
+^ these things all come together when we work together to learn about failures
+
+^ and these are some meetings that we use
+
 ---
 
 # failure and success come from the same source
@@ -206,7 +214,7 @@ understand the costs and benefits of a proposed solution, and discuss alternativ
 
 # [fit] many of those tradeoffs are unknown
 
-^ we want to examine these tradeoffs
+^ we want to examine these tradeoffs that new technology introduces
 
 ---
 
@@ -242,7 +250,8 @@ early enough to be able to bail out or make major course corrections
 
 ---
 
-# [fit] Meeting Format
+# Architecture Review
+# Meeting Format
 
 ^ now lets talk about the format and expectations
 
@@ -285,8 +294,6 @@ early enough to be able to bail out or make major course corrections
 
 ---
 
-# [fit] Wait!
-
 # You're saying my project might not move forward?
 
 ---
@@ -312,7 +319,9 @@ early enough to be able to bail out or make major course corrections
 
 ---
 
-# Operability Reviews
+# Operability
+
+# Reviews
 
 ---
 
@@ -347,9 +356,12 @@ representatives from:
 - Has the feature been tested enough to deploy to production?
 - Does everyone know when it will go live, and who will push the feature?
 - Is there communication about the feature ready to go out with the feature?
-- Is it possible to turn up this feature on a percentage basis or dark launch?
+- Is it possible to turn up this feature on a percentage basis, dark launch, or gameday it?
 
 ^ percentage may be to staff first
+
+^ (explain dark launch and gameday)
+
 ^ communication - community/blog post/forums/etc
 
 ---
@@ -363,6 +375,10 @@ representatives from:
     - If so, are there tests that can be and are run on CI?
 
 ^ none of these can be "no"
+
+---
+
+# Contingency Checklist
 
 ---
 
@@ -430,7 +446,9 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ---
 
-# Post Mortems
+# Post 
+
+# Mortems
 
 ---
 
@@ -450,7 +468,7 @@ a postmortem is a facilitated meeting during which people involved/interested/cl
 
 # local rationality
 
-we want to know how it made sense for someone to do what they did at the time
+we want to know how it made sense for someone to do what they did *at the time*
 
 ---
 
@@ -459,20 +477,24 @@ we want to know how it made sense for someone to do what they did at the time
 - asking **why** is leading to *who* is responsible
 - asking **how** leads to *what*
 
+^ second stories are where we dig deeper into the circumstance and environment that an engineer found themselves in
+
+^ used to help understand what went wrong
+
 ---
 
-# Human Error
+# Avoiding Human Error
 
-**Human error** points to individuals in a complex system. In complex systems, system behaviour is driven fundamentally by the goals of the system and the system structure. People provide the flexibility to make it work.
+**Human error** points to individuals in a complex system. But, in complex systems, system behaviour is driven fundamentally by the goals of the system and the system structure. People just provide the flexibility to make it work.
 
 <!--http://humanisticsystems.com/2013/09/21/human-error-the-handicap-of-human-factors-safety-and-justice-->
 
 
 ---
 
-# staying away from human error
+# Recognizing Human Error
 
-- recognize other words for it: slip, lapse, distraction, mistake, deviation, carelessness, malpractice, recklessness, violation, misjudgement, etc
+- be aware of other terms for it: slip, lapse, distraction, mistake, deviation, carelessness, malpractice, recklessness, violation, misjudgement, etc
 - don’t point to individuals when you really want to understand system itself and the work
 - how do you feel when something goes wrong - is it to find who did it / who screwed up,  or to find how it happened
 
@@ -486,7 +508,7 @@ implies deviation from “normal” or ideal, but in complex situations and task
 
 ![](images/bull.jpg)
 
-# Other things to avoid
+# Other Things to Avoid
 
 <!-- https://www.flickr.com/photos/40326422@N00/4679317079 -->
 
@@ -521,7 +543,9 @@ the human tendency to create possible alternatives to life events that have alre
 
 ---
 
-# [fit] Meeting Format
+# Post Mortem
+
+# Meeting Format
 
 ---
 
@@ -580,17 +604,40 @@ the human tendency to create possible alternatives to life events that have alre
 
 ---
 
+![fit](images/morgue.png)
+
+# Morgue
+
+## https://github.com/etsy/morgue
+
+---
+
 # In Summary
 
 ---
+
+# We Can Learn Before and After Failure
+
+---
+
+# Before
+
+- Architecture reviews for new technology
+- Operability reviews to gain launch confidence
+
+<!--
 
 # Summary of Arch vs. Op
 
 ![inline](images/kellan-tweet.png)
 
+-->
+
 ---
 
-# Postmortems are done soon after a failure
+# After
+
+- Postmortems are done soon after a failure
 
 ^ can be any severity level, doesn't have to be technical
 
@@ -603,5 +650,3 @@ the human tendency to create possible alternatives to life events that have alre
 #### John Goulah (@johngoulah)
 
 #### Etsy
-
----
