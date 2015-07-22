@@ -44,7 +44,7 @@ build-lists: true
 - Headquartered in Brooklyn
 - Over 700 employees
 - 7 offices around the world
-- 80+ dogs
+- 80+ dogs / 80+ cats
 
 ---
 
@@ -105,7 +105,7 @@ process of understanding how people, structure, and processes influence one anot
 
 # Personal Mastery 
 
-an individual holds great importance in a learning organization.
+an individual holds great importance in a learning organization
 
 ^ Continuous self-improvement holds as much importance as commitment and work for the organization. Employees need to grow and work on their own goals.
 
@@ -113,7 +113,7 @@ an individual holds great importance in a learning organization.
 
 # Mental Models 
 
-the assumptions held by individials and organizations.
+the assumptions held by individials and organizations
 
 ^ This is the company culture and the diverse theories and mindsets that serve as a framework for the functioning of the organization. Learning organizations look for how these affect organizational development.
 
@@ -124,7 +124,7 @@ the assumptions held by individials and organizations.
 
 # Shared Vision 
 
-creates a common identity that provides focus and energy for learning.
+creates a common identity that provides focus and energy for learning
 
 ^ A learning organization's employees all share a common vision. Personal goals must be in sync with the goals and vision of the organization.
 
@@ -134,7 +134,7 @@ creates a common identity that provides focus and energy for learning.
 
 # Team Learning 
 
-the problem solving capacity of the organization is improved through better access to knowledge and expertise.
+the problem solving capacity of the organization is improved through better access to knowledge and expertise
 
 ^ Requires individuals to engage in dialogue and group discussion. For a team to learn, they must be in sync and reach agreement.
 
@@ -150,7 +150,7 @@ the problem solving capacity of the organization is improved through better acce
 
 ^ these things all come together when we work together to learn about failures
 
-^ and these are some meetings that we use
+^ and these are some meetings that we use which I'll be talking about
 
 ---
 
@@ -167,7 +167,7 @@ things have come together in unexpected way
 
 # context
 
-^ some alignment of random variables in the system causes context to change
+^ but some alignment of random variables in the system causes the context to change
 
 ---
 
@@ -186,7 +186,7 @@ things have come together in unexpected way
 - blameless post mortems
     - hold after a failure
 
-^ inflection points in the product lifecycle 
+^ inflection points in the product lifecycle
 
 ---
 
@@ -198,15 +198,18 @@ things have come together in unexpected way
 
 understand the costs and benefits of a proposed solution, and discuss alternatives
 
+^ whats the point of an arch review?
+
 ---
 
 # Etsy Tech Axioms
 
-- we use a small number of well known tools. 
-- all technology decisions come with trade offs. With new technology, many of those trade offs are unknown.
-- we’re growing. things change.
+- we use a small number of well known tools
+- all technology decisions come with trade offs
+    - with new technology, many of those trade offs are unknown
+- we’re growing. things change
 
-^ have to show our tech axioms to get understanding of why we examine new methods and departures 
+^ have to show our tech axioms to get understanding of why we examine new methods and departures
 
 ---
 
@@ -239,6 +242,8 @@ when there is a perceived departure from current technology choices or patterns
 # How early do you hold them?
 
 early enough to be able to bail out or make major course corrections
+
+^ earlier is better, but probably once you have written a technical proposal, and possibly a prototype
 
 ---
 
@@ -292,9 +297,11 @@ early enough to be able to bail out or make major course corrections
 - discuss questions and concerns
 - decide if we are moving forward or need further discussion
 
+^ the meeting itself
+
 ---
 
-# You're saying my project might not move forward?
+# you're saying my project might not move forward?
 
 ---
 
@@ -331,15 +338,15 @@ Understand how could the system break, how will we know, and how will we react?
 
 ---
 
-# When Do We Do Operability Reviews?
+# When do we do operability reviews?
 
-- After archtecture reviews in the product lifecycle, generally right before launch
-- When we need to gain increased confidence for launch due to the the technology, product, or communication choices being risky
-- If there's a chance you'd surprise teams that operate the software
+- after architecture reviews in the product lifecycle, generally right before launch
+- when we need to gain increased confidence for launch due to the the technology, product, or communication choices being risky
+- if there's a chance you'd surprise teams that operate the software
 
 ---
 
-# Who comes to the Operability Review?
+# Who comes to the operability review?
 
 representatives from:
 
@@ -416,7 +423,7 @@ Any comments about the item?
 
 This is just a measure of how impactful this will be if it *does* actually turn out to be a concern.
 
-^ Example: "High"
+^ Example: "High" or "Low"
 
 ---
 
@@ -456,19 +463,27 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 a postmortem is a facilitated meeting during which people involved/interested/close to an accident or incident debriefs together on how we think the event came about
 
+^ note they are blameless (we'll talk a little about that)
+
+^ the facilitator doesn't have to be part of the event, but the people close to it need to be there
+
 ---
 
 # What does it cover?
 
-- going through a timeline of events
-- learning how things are expected to work ‘normally’, adding the context of everyone’s perspective
-- exploring what we might do to improve thing for the future
+- walking through a timeline of events
+- learning how things are expected to work "normally", adding the context of everyone’s perspective
+- exploring what we might do to improve things for the future
+
+^ normally here means under stable conditions
 
 ---
 
-# local rationality
+# Local Rationality
 
 we want to know how it made sense for someone to do what they did *at the time*
+
+^ another big thing we want to cover is local rationality
 
 ---
 
@@ -485,10 +500,15 @@ we want to know how it made sense for someone to do what they did *at the time*
 
 # Avoiding Human Error
 
-**Human error** points to individuals in a complex system. But, in complex systems, system behaviour is driven fundamentally by the goals of the system and the system structure. People just provide the flexibility to make it work.
+**Human error** points directly to individuals in a complex system. But, in complex systems, system behaviour is driven fundamentally by the goals of the system and the system structure. People just provide the flexibility to make it work.
 
 <!--http://humanisticsystems.com/2013/09/21/human-error-the-handicap-of-human-factors-safety-and-justice-->
 
+---
+
+# Avoiding Human Error (cont)
+
+Human error implies deviation from “normal” or "ideal", but in complex situations and tasks there is often no normal ideal that can be precisely and exactly described, many variable interconnected touchpoints influence decisions that are made
 
 ---
 
@@ -496,13 +516,10 @@ we want to know how it made sense for someone to do what they did *at the time*
 
 - be aware of other terms for it: slip, lapse, distraction, mistake, deviation, carelessness, malpractice, recklessness, violation, misjudgement, etc
 - don’t point to individuals when you really want to understand system itself and the work
-- how do you feel when something goes wrong - is it to find who did it / who screwed up,  or to find how it happened
+- how do you feel when something goes wrong?
+    - is it to find who did it / who screwed up,  or to find how it happened?
 
----
-
-# Human error (cont)
-
-implies deviation from “normal” or ideal, but in complex situations and tasks there is often no normal ideal that can be precisely and exactly described, many variable interconnected touchpoints influence decisions that are made
+^ in order to avoid it you have to be able to recognize it
 
 ---
 
@@ -559,11 +576,13 @@ the human tendency to create possible alternatives to life events that have alre
 
 # Timeline
 
-- a rough timeline scaffolding is required (usually starting with IRC logs)
-- talk about facts that were known at the time, even if hindsight reveals misunderstandings in what we knew
-- look out for knowledge that some people were aware of, that others were not, dig into that
+- a rough timeline scaffolding is required
+- talk about facts that were known *at the time*, even if hindsight reveals misunderstandings in what we knew
+- look out for knowledge that some people were aware of, that others were not, and dig into that
 - no judgement about actions or knowledge (counterfactuals)
-- tell people to hold that thought if they jump to remedation items at this point
+- tell people to hold that thought if they jump to remediation items at this point
+
+^ timeline scaffolding usually starts with chat/irc logs
 
 ---
 
