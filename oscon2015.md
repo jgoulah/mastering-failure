@@ -9,7 +9,7 @@ build-lists: true
 
 ![](images/etsy_logo_lg_rgb.png)
 
-^ A marketplace for people around the world to connect, buy, and sell unique goods 
+^ A marketplace for people around the world to connect, buy, and sell unique goods
 
 ^ Our mission is to re-imagine commerce in ways that build a more fulfilling and lasting world
 
@@ -58,19 +58,6 @@ build-lists: true
 
 ^ values are the guardrails in our path towards the mission, and everything is surrounded by the culture
 
-<!---
-
-# Company Values
-
-- We are a mindful, transparent, and humane business
-- We plan and build for the long term
-- We value craftmanship in all we make
-- We believe fun should be part of everything we do
-- We keep it real, always
--->
-
-<!-- good notes here: https://jira.etsycorp.com/confluence/display/COM/Communicating+in+Ways+that+Align+with+Etsy's+Values -->
-
 ---
 
 # Learning Org
@@ -89,11 +76,11 @@ a company that facilitates the learning of its members and continuously transfor
 
 ^ Senge is the author of book The Fifth Discipline: The Art and Practice of the Learning Organization.
 
-^ He popularized the concept of the learning organization through his book The Fifth Discipline. In the book, he proposed the following five disciplines
+^ He popularized the concept of the learning organization through this book. In the book, he proposed the following five disciplines
 
 ---
 
-# Systems Thinking 
+# Systems Thinking
 
 process of understanding how people, structure, and processes influence one another within a larger system
 
@@ -103,7 +90,7 @@ process of understanding how people, structure, and processes influence one anot
 
 ---
 
-# Personal Mastery 
+# Personal Mastery
 
 an individual holds great importance in a learning organization
 
@@ -111,7 +98,7 @@ an individual holds great importance in a learning organization
 
 ---
 
-# Mental Models 
+# Mental Models
 
 the assumptions held by individials and organizations
 
@@ -122,7 +109,7 @@ the assumptions held by individials and organizations
 
 ---
 
-# Shared Vision 
+# Shared Vision
 
 creates a common identity that provides focus and energy for learning
 
@@ -132,11 +119,11 @@ creates a common identity that provides focus and energy for learning
 
 ---
 
-# Team Learning 
+# Team Learning
 
 the problem solving capacity of the organization is improved through better access to knowledge and expertise
 
-^ Requires individuals to engage in dialogue and group discussion. For a team to learn, they must be in sync and reach agreement.
+^ This requires individuals to engage in dialogue and group discussion. For a team to learn, they must be in sync and reach agreement.
 
 ^ Therefore team members must develop open communication, shared meaning, and shared understanding.
 
@@ -150,14 +137,16 @@ the problem solving capacity of the organization is improved through better acce
 
 ^ these things all come together when we work together to learn about failures
 
-^ and these are some meetings that we use which I'll be talking about
+^ and these are some meetings and processes that we use which I'll be talking about
+
+^ (note we are just scratching the surface)
 
 ---
 
 # failure and success come from the same source
 
-^ they come from the same source,  ordinary work, only difference in failure
-things have come together in unexpected way
+^ failure and success come from the same source,  ordinary work, only difference in failure
+is things have come together in an unexpected way
 
 ^ some of the things that I listed as learning tools such as arch/op reviews, failure hasn't yet happened
 
@@ -169,6 +158,8 @@ things have come together in unexpected way
 
 ^ but some alignment of random variables in the system causes the context to change
 
+^ so we are learning how to prevent it, or how to react in the event of failure
+
 ---
 
 # can study the system at any time
@@ -177,16 +168,16 @@ things have come together in unexpected way
 
 ---
 
-# three inflection points
+# inflection points
 
 - architecture reviews
     - early feedback and discussion
 - operability reviews
-    - hold before launching
+    - held before launching
 - blameless post mortems
-    - hold after a failure
+    - held after a failure
 
-^ inflection points in the product lifecycle
+^ three main inflection points in the product lifecycle that you can introduce these techniques
 
 ---
 
@@ -277,7 +268,7 @@ early enough to be able to bail out or make major course corrections
 
 # Some General Questions
 
-- Do we understand the costs of this departure?  
+- Do we understand the costs of this departure?
 - Have we asked hard questions about trade-offs?
 - What will this prohibit us from doing in the future?
 
@@ -319,8 +310,8 @@ early enough to be able to bail out or make major course corrections
 
 # At the end we should have
 
-- detailed notes from the conversation 
-- agreement on tricky components and document 
+- detailed notes from the conversation
+- agreement on tricky components and document them
 - a compilation of learnings and questions
 - a decision of whether to keep going with the project, stop and rethink, or gather more information
 
@@ -375,7 +366,7 @@ representatives from:
 
 # Some Questions (cont)
 
-- Does the launch involves any new production infrastructure? 
+- Does the launch involves any new production infrastructure?
     - If so, are those pieces in monitoring or metrics collection?
     - If so, is there a deployment pipeline in place?
     - If so, is there a development environment set up to make it work in dev?
@@ -386,6 +377,8 @@ representatives from:
 ---
 
 # Contingency Checklist
+
+^ if there is new prod infrastructure, we need a contingency checklist
 
 ---
 
@@ -399,7 +392,7 @@ a list of things that could possibly go "wrong" with a new feature, what we coul
 
 What could possibly go wrong with the feature launched in production?
 
-^ This is intentionally vague, because of course there's a multitude of things that can go wrong at any time. This is meant to assume that the site is stable before launch, and anything that could 'go wrong' is a result of introducing the change which is this new feature.
+^ This is intentionally vague, because of course there's a multitude of things that can go wrong at any time. This is meant to assume that the site is stable before launch, and anything that could 'go wrong' is a result of introducing the change which is this new feature. We are hypothesizing what can go wrong.
 
 ---
 
@@ -451,9 +444,11 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ^ This is the real worst-case communication, if needed.
 
+^ (note: PR means public relations)
+
 ---
 
-# Post 
+# Post
 
 # Mortems
 
@@ -496,6 +491,8 @@ we want to know how it made sense for someone to do what they did *at the time*
 
 ^ used to help understand what went wrong
 
+^ make sure we ask "how" not "why"
+
 ---
 
 # Avoiding Human Error
@@ -521,6 +518,8 @@ Human error implies deviation from “normal” or "ideal", but in complex situa
 
 ^ in order to avoid it you have to be able to recognize it
 
+^ this is about what your intentions are and avoiding blaming people
+
 ---
 
 ![](images/bull.jpg)
@@ -538,7 +537,17 @@ Human error implies deviation from “normal” or "ideal", but in complex situa
 - ignores the complexity of an event, which is what should be explored if we are going to learn
 - leads directly to blaming things on human error
 
-^ there is no such thing as root cause
+^ there is no such thing as root cause or silver bullet
+
+^ or "Eureka part" - a single component that can be pointed to that ties causality into a neat bundle for us
+
+---
+
+# Nietzschean anxiety
+
+when situations appear both threatening and ambiguous we seem to demand a clear causal agency; because if we cannot establish this agency then the "problem" is potentially irresolvable
+
+^ It is the absence of this singular part that can bring on the sense of Nietzschean anxiety (pronounched nee chee ann) 
 
 ---
 
@@ -629,6 +638,8 @@ the human tendency to create possible alternatives to life events that have alre
 
 ## https://github.com/etsy/morgue
 
+^ recommend using a tool to collect the post mortem data
+
 ---
 
 # In Summary
@@ -660,7 +671,7 @@ the human tendency to create possible alternatives to life events that have alre
 
 ^ can be any severity level, doesn't have to be technical
 
-^ have done them for performance reasons
+^ have done them for performance degrations, coffee pot spilling everywhere, postponing a code as craft conferenc
 
 ---
 
