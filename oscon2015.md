@@ -164,7 +164,7 @@ is things have come together in an unexpected way
 
 # can study the system at any time
 
-^ if field experts study the system, you can find the same things you would in a postmortem, presumably before they even happen
+^ if field experts (eg. engineers) study the system, you can find the same things you would in a postmortem, presumably before they even happen
 
 ---
 
@@ -294,9 +294,7 @@ early enough to be able to bail out or make major course corrections
 
 # you're saying my project might not move forward?
 
----
-
-#### (maybe)
+^ it is possible that the project may not move forward
 
 ---
 
@@ -325,14 +323,14 @@ early enough to be able to bail out or make major course corrections
 
 # Operability Reviews
 
-Understand how could the system break, how will we know, and how will we react?
+understand how the system could break, how we will know, and how we will react
 
 ---
 
 # When do we do operability reviews?
 
 - after architecture reviews in the product lifecycle, generally right before launch
-- when we need to gain increased confidence for launch due to the the technology, product, or communication choices being risky
+- when we need to gain increased confidence for launch due to the technology, product, or communication choices being risky
 - if there's a chance you'd surprise teams that operate the software
 
 ---
@@ -408,7 +406,7 @@ What is the likelihood of each item going wrong?
 
 Any comments about the item?
 
-^ further description of issue and how it may be mitigated if it does happen (short/long term)
+^ further description of the issue and how it may be mitigated if it does happen (short/long term)
 
 ---
 
@@ -426,7 +424,7 @@ What do we do to mitigate the issue with the item (i.e. can we gracefully degrad
 
 ^ This is where we indicate what the wire on/off flag is to turn off this part of the feature that is introducing issues.
 
-^ Example: Set disable_coffee_favorites_page = 1
+^ Example: Set disable_favortites_button = 1
 
 ---
 
@@ -448,7 +446,7 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ---
 
-# Post
+# Blameless Post
 
 # Mortems
 
@@ -625,6 +623,11 @@ the human tendency to create possible alternatives to life events that have alre
 
 - Remediation items should have tickets associated with them to follow up on
 - There can be further post meeting discussion on these but tasks should not linger
+
+---
+
+# Remediation questions
+
 - What things could we do to prevent this exact thing from happening in the future?
 - What things could we do to make troubleshooting similar incidents in the future easier?
 
@@ -655,14 +658,6 @@ the human tendency to create possible alternatives to life events that have alre
 - Architecture reviews for new technology
 - Operability reviews to gain launch confidence
 
-<!--
-
-# Summary of Arch vs. Op
-
-![inline](images/kellan-tweet.png)
-
--->
-
 ---
 
 # After
@@ -680,3 +675,5 @@ the human tendency to create possible alternatives to life events that have alre
 #### John Goulah (@johngoulah)
 
 #### Etsy
+
+^ please rate this session
