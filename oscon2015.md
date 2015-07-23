@@ -358,7 +358,7 @@ representatives from:
 
 ^ (explain dark launch and gameday)
 
-^ communication - community/blog post/forums/etc
+^ communication - community/blog post/forums/tweets/etc
 
 ---
 
@@ -430,7 +430,7 @@ What do we do to mitigate the issue with the item (i.e. can we gracefully degrad
 
 # Onsite Messaging
 
-What is the messaging to the user in the forums/blog/etc. if this needs graceful degradation?
+What is the messaging to the user in the forums, blog, and social media if this needs graceful degradation?
 
 ^ This is where we have some basic information to tell the user, in the various places on the site.
 
@@ -438,7 +438,7 @@ What is the messaging to the user in the forums/blog/etc. if this needs graceful
 
 # PR
 
-Is PR needed for the contingency (i.e. larger scale failure, etc.)
+Is PR needed for the contingency (i.e. larger scale failure)
 
 ^ This is the real worst-case communication, if needed.
 
@@ -446,9 +446,9 @@ Is PR needed for the contingency (i.e. larger scale failure, etc.)
 
 ---
 
-# Blameless Post
+# *Blameless* 
 
-# Mortems
+# Post Mortems
 
 ---
 
@@ -567,6 +567,16 @@ the human tendency to create possible alternatives to life events that have alre
 
 ---
 
+![fit](images/morgue.png)
+
+# Morgue
+
+## https://github.com/etsy/morgue
+
+^ before we get into the meeting format I wanted to recommend using a tool to collect the post mortem data
+
+---
+
 # Post Mortem
 
 # Meeting Format
@@ -597,7 +607,7 @@ the human tendency to create possible alternatives to life events that have alre
 
 - continually ask "What are we missing?" until those involved feel its complete
 - continually ask "Does everyone agree this is the order in which events took place?"
-- make sure to include important times for events that happened (alerts, discoveries, etc)
+- make sure to include important times for events that happened (alerts, discoveries)
 - reach a consensus on the timeline and move on to the discussion
 
 ---
@@ -624,6 +634,8 @@ the human tendency to create possible alternatives to life events that have alre
 - Remediation items should have tickets associated with them to follow up on
 - There can be further post meeting discussion on these but tasks should not linger
 
+^ (explain about 30 day deadline, but some tickets are created that need more figuring out)
+
 ---
 
 # Remediation questions
@@ -631,17 +643,7 @@ the human tendency to create possible alternatives to life events that have alre
 - What things could we do to prevent this exact thing from happening in the future?
 - What things could we do to make troubleshooting similar incidents in the future easier?
 
-^ question wrt tools, alerts, metrics, procedures, etc.
-
----
-
-![fit](images/morgue.png)
-
-# Morgue
-
-## https://github.com/etsy/morgue
-
-^ recommend using a tool to collect the post mortem data
+^ both of these questions are  wrt to tools, alerts, metrics, and procedures
 
 ---
 
@@ -663,6 +665,7 @@ the human tendency to create possible alternatives to life events that have alre
 # After
 
 - Postmortems are done soon after a failure
+    - avoid human error, counterfactuals, hindsight bias, and root cause
 
 ^ can be any severity level, doesn't have to be technical
 
